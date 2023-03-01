@@ -1,0 +1,14 @@
+.base {
+    background-color: greenyellow;
+    color: blue;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
