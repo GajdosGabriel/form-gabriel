@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Vite + Vue</title>
+    <title>Gabriel Form</title>
 
     <link rel="stylesheet" href="/src/govuk-frontend-4.4.1.min.css" />
 
@@ -15,6 +15,27 @@
 <body>
     <div class="govuk-width-container ">
         <main class="govuk-main-wrapper " id="main-content" role="main">
+
+            <!-- Errors sumaary -->
+            <div class="govuk-error-summary" data-module="govuk-error-summary">
+                <div role="alert">
+                    <h2 class="govuk-error-summary__title">
+                        There is a problem
+                    </h2>
+                    <div class="govuk-error-summary__body">
+                        <ul class="govuk-list govuk-error-summary__list">
+                            <li>
+                                <a href="#">The date your passport was issued must be in the past</a>
+                            </li>
+                            <li>
+                                <a href="#">Enter a postcode, like AA1 1AA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Errors sumaary -->
+
             <form action="/">
 
                 <div class="govuk-form-group">
@@ -187,7 +208,7 @@
                     <span id="input-with-error-message-error" class="govuk-error-message">
                         Orientačné číslo sa vyžaduje
                     </span>
-                    <input type="text" class="govuk-input--error govuk-input--width-10" id="BuildingNumber" name="BuildingNumber" placeholder="Orientačné číslo" required>
+                    <input type="text" class="govuk-input govuk-input--error govuk-input--width-10" id="BuildingNumber" name="BuildingNumber" placeholder="Orientačné číslo" required>
                 </div>
 
 
